@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #0D192C;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+.card{
+  max-width: 350px;
+  background-color:#15263F;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  gap: 15px;
+}
+.img__background{
+  height: 100%;
+  width: 100%;
+}
+.title{
+  color: white;
+  font-size: 20px;
+  align-self: flex-start;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.title:hover{
+  color: #00FFF8;
+}
+.description{
+  color: #2E405A;
+}
+.img{
+  position: relative;
+  max-width: 302px;
+  max-height: 302px;
+  cursor: pointer; 
+}
+
+.overlay{
+  width: 100%;
+  background-color: #00fff76c;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+   transition: 0.3s ease-in-out;
+}
+
+.img:hover .overlay{
+  opacity: 1;
+}
+
+.crypto{
+  display: flex;
+  justify-content: space-between;
+  color: #2E405A;
+  align-self: flex-start;
+  width: 100%;
+}
+.line{
+  color: #2E405A;
+  width: 100%;
+}
+.crypto__time{
+  display: flex;
+  gap: 5px;
+}
+.crypto__name{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color:#00FFF8;
+}
+.user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+}
+.user_name{
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.user_name:hover{
+  color: #00FFF8;
+}
